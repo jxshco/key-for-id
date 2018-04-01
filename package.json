@@ -1,7 +1,7 @@
 {
   "name": "key-for-id",
-  "version": "0.1.1",
-  "description": "",
+  "version": "1.0.0",
+  "description": "Find the key for a specific value in an array",
   "main": "./lib/index.js",
   "directories": {
     "lib": "lib",
@@ -9,16 +9,40 @@
   },
   "scripts": {
     "build": "babel src -d lib",
-    "prepublish": "npm run build",
-    "test": "jest"
+    "prepublish": "npm run lint && npm run test && npm run build",
+    "lint": "eslint src tests",
+		"test": "jest"
   },
-  "author": "",
+  "repository": {
+		"type": "git",
+		"url": "git+https://github.com/jxshco/key-for-id.git"
+	},
+  "keywords": [
+    "javascript",
+    "es6",
+    "array",
+    "find",
+    "key",
+    "index"
+  ],
+  "author": "Josh Sturrock <hello@jxsh.co>",
   "license": "MIT",
+  "bugs": {
+		"url": "https://github.com/jxshco/key-for-id/issues"
+	},
+	"homepage": "https://github.com/jxshco/key-for-id#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-jest": "^22.4.1",
-    "babel-preset-env": "^1.6.1",
-    "jest": "^22.4.2"
+		"babel-eslint": "^8.2.2",
+		"babel-jest": "^22.4.1",
+		"babel-preset-env": "^1.6.1",
+		"eslint": "^4.18.2",
+		"eslint-config-standard": "^11.0.0",
+		"eslint-plugin-import": "^2.9.0",
+		"eslint-plugin-node": "^6.0.1",
+		"eslint-plugin-promise": "^3.7.0",
+		"eslint-plugin-standard": "^3.0.1",
+		"jest": "^22.4.2"
   },
   "jest": {
     "transform": {
