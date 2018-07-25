@@ -17,15 +17,8 @@
     "type": "git",
     "url": "git+https://github.com/jxshco/key-for-id.git"
   },
-  "keywords": [
-    "javascript",
-    "es6",
-    "array",
-    "find",
-    "key",
-    "index"
-  ],
-  "author": "Josh Sturrock <hello@jxsh.co>",
+  "keywords": ["javascript", "es6", "array", "find", "key", "index"],
+  "author": "Josh Sturrock <jxshco@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jxshco/key-for-id/issues"
